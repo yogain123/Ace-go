@@ -18,4 +18,8 @@ func main() {
 	fmt.Println(int64(d))
 
 	fmt.Println(math.Sin(n))
+
+	const name = "yogendra"
+	//name = "saxena" // cannot reassign
+	fmt.Println(name)
 }
