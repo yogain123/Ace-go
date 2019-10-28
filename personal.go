@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"net/http"
 	"os"
+	"sort"
 	"strings"
 )
 
@@ -15,7 +16,10 @@ type Person struct {
 }
 
 func main() {
-	var arr = hola{1, 2, 3, 4, 5}
+	var arr = hola{1, 2, 3, 4, 5, 9, 2}
+	s := []int{5, 2, 6, 3, 1, 4} // unsorted
+	sort.Reverse(sort.IntSlice(s))
+	fmt.Println(s)
 	fmt.Println(arr, len(arr))
 	var fullname = []string{"yogendra", "saxena"}
 	var res = strings.Join(fullname, " ")
